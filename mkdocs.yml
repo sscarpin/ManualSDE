@@ -1,0 +1,63 @@
+site_name: Manual de usuario SDE
+site_url: https://manual_sde.com/
+
+nav:
+    - Principal: index.md
+    - Guía de usuario:
+          - Menues: menues.md
+          - Submenues: 
+              - Expedientes: 
+                - Expedientes: expedientes.md
+                - Historial de transferencias: historial_transferencias.md
+                - Tipos de expedientes: tipos_expedientes.md
+                - Estados de expedientes: estados_expedientes.md
+                - Historial de expedientes: historial_expedientes.md
+                - Tags expediente: tags_expediente.md
+              - Personas: 
+                - Personas: personas.md
+                - Localidades: localidades.md
+                - Países: paises.md
+                - Provincias: provincias.md
+                - Ciudades: ciudades.md
+              - Permisos: 
+                - Areas: areas.md
+                - Usuarios: usuarios.md
+                - Asignar áreas: asignar_areas.md
+              - Reportes: 
+                - Estadísticas: estadisticas.md
+                - Reportes: reportes.md
+    - Acerca de: about.md
+
+theme:
+     name: material
+     favicon: images/logo1.png
+     logo: images/logo.png
+     features: 
+      - header.autohide
+      - navigation.sections
+      - navigation.expand
+      - navigation.indexes
+      - navigation.top
+      - navigation.tabs
+      - navigation.footer
+      - search.suggest
+    
+
+extra:
+    generator: false
+
+
+plugins:
+    - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+       auto_caption: false
+       caption_position: bottom
+    - search:
+        separator: '[\s\-\.]+'
